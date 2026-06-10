@@ -349,8 +349,28 @@
     padding: 20px 24px;
     color: var(--bone-dim);
     font-size: 0.95rem;
+    margin-top: 26px;
   }
   .note-box strong{ color: var(--bone); }
+
+  .sunrise-card{
+    background: linear-gradient(160deg, var(--charcoal-3), var(--charcoal-2));
+    border: 1px solid var(--sand);
+    border-radius: 18px;
+    padding: 32px;
+  }
+  .sunrise-icon{
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: var(--charcoal);
+    border: 1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--sand);
+    margin-bottom: 18px;
+  }
+  .sunrise-icon svg{ width: 24px; height: 24px; }
+  .sunrise-card .session-time{ margin-bottom: 14px; }
+  .sunrise-card p{ color: var(--bone-dim); font-size: 0.95rem; }
 
   @media (max-width: 880px){
     .schedule-detail{ grid-template-columns: 1fr; }
@@ -578,32 +598,40 @@
           <div class="section-tag">02 &mdash; Weekly Rhythm</div>
           <h2 style="margin-top:14px;">Schedule</h2>
         </div>
-        <p class="section-sub">Sunrise sessions, every day of the week. Times and locations flex around you — just ask.</p>
+        <p class="section-sub">Open daily from early morning through evening, with a dedicated sunrise session every day for early risers.</p>
       </div>
 
       <div class="rhythm-row">
-        <div class="day-stamp"><span class="d">SUN</span><span class="t">7&ndash;8am</span></div>
-        <div class="day-stamp"><span class="d">MON</span><span class="t">7&ndash;8am</span></div>
-        <div class="day-stamp"><span class="d">TUE</span><span class="t">7&ndash;8am</span></div>
-        <div class="day-stamp"><span class="d">WED</span><span class="t">7&ndash;8am</span></div>
-        <div class="day-stamp"><span class="d">THU</span><span class="t">7&ndash;8am</span></div>
-        <div class="day-stamp"><span class="d">FRI</span><span class="t">7&ndash;8am</span></div>
-        <div class="day-stamp"><span class="d">SAT</span><span class="t">7&ndash;8am</span></div>
+        <div class="day-stamp"><span class="d">SUN</span><span class="t">7a&ndash;8p</span></div>
+        <div class="day-stamp"><span class="d">MON</span><span class="t">7a&ndash;8p</span></div>
+        <div class="day-stamp"><span class="d">TUE</span><span class="t">7a&ndash;8p</span></div>
+        <div class="day-stamp"><span class="d">WED</span><span class="t">7a&ndash;8p</span></div>
+        <div class="day-stamp"><span class="d">THU</span><span class="t">7a&ndash;8p</span></div>
+        <div class="day-stamp"><span class="d">FRI</span><span class="t">7a&ndash;8p</span></div>
+        <div class="day-stamp"><span class="d">SAT</span><span class="t">7a&ndash;8p</span></div>
       </div>
 
       <div class="schedule-detail">
         <div>
-          <div class="session-time">7:00&ndash;8:00<span> AM EST</span></div>
-          <p>Every session is 45 minutes, scheduled within the daily 7&ndash;8am window. Jane keeps mornings open seven days a week so training fits around work, family, and everything else &mdash; not the other way around.</p>
+          <div class="session-time">7AM&ndash;8PM<span> EST</span></div>
+          <p>Jane trains daily from 7am to 8pm EST. Every session is 45 minutes, scheduled at a time that fits your day &mdash; morning, midday, or evening.</p>
           <div class="pill-row">
             <span class="pill">1-on-1</span>
             <span class="pill">Small Group</span>
             <span class="pill alt">Virtual</span>
             <span class="pill alt">Outdoor on Request</span>
           </div>
+          <div class="note-box">
+            <strong>Flexible by design.</strong> Location and format are confirmed when you book &mdash; the studio, the beach, your home gym, virtually, or out in nature if you'd rather train somewhere with a view. Message Jane on Instagram or by email to find a time that works.
+          </div>
         </div>
-        <div class="note-box">
-          <strong>Flexible by design.</strong> Location and format are confirmed when you book &mdash; the studio, the beach, your home gym, virtually, or out in nature if you'd rather train somewhere with a view. Message Jane on Instagram or by email to find a time that works.
+        <div class="sunrise-card">
+          <div class="sunrise-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke-linecap="round"/></svg>
+          </div>
+          <div class="section-tag" style="margin-bottom:8px;">Dedicated Sunrise Session</div>
+          <div class="session-time" style="font-size: clamp(1.8rem, 4vw, 2.6rem);">7:00&ndash;8:00<span> AM EST</span></div>
+          <p>One slot, every morning, held just for the early risers. Start the day with a 45-minute session before the rest of life gets going &mdash; at the studio, on Farris Beach, or wherever the sunrise looks best.</p>
         </div>
       </div>
     </div>
